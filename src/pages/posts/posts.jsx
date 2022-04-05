@@ -1,10 +1,10 @@
 import React from 'react'
 import "./posts_style.scss"
 
-const Home = () => {
+const Posts = () => {
     return (
-        <div className='home'> Posts </div>
+        <div> Posts </div>
     )
 }
 
-export default Home
+export default Posts
