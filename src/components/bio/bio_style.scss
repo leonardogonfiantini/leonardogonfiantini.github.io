@@ -1,0 +1,66 @@
+.Bio {
+
+
+    hr {
+        width: 80%;
+    }
+
+    .profile {
+
+        top: 2rem;
+
+        position: relative;
+        text-align: center;
+        p {
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        img {
+            margin-top: 1rem;
+            width: 15rem;
+            border: 3px solid white;
+            border-radius: 50%;
+        }
+    }
+
+    .whoami {
+        top: 4rem;
+        margin-left: 1rem;
+        position: relative;
+        color: white;
+
+        p {
+            margin-top: 1rem;
+            width: 80%;
+            font-weight: 600;
+        }
+    }
+
+    .tree-life {
+        position: relative;
+        margin-top: 6rem;
+        color: white;
+
+        margin-left: 1rem;
+        
+        ul {
+            margin-top: 0.5rem;
+        }
+
+        li {
+            display: flex;
+            width: 80%;
+
+            p {
+                margin-left: 1rem;
+            }
+        }
+
+
+
+
+    }
+
+}
