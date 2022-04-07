@@ -3,24 +3,52 @@ import "./navbar_style.scss"
 
 import mushroom from "./mushroom.png"
 import menu from "./menu.png"
-import sun from "./moon.png"
-import moon from "./sun.png"
+import moon from "./moon.png"
+import sun from "./sun.png"
+
 
 const Navbar = () => {
+
+    function openMenu() {
+        var large_menu = document.querySelector('.large-menu');
+        if (large_menu.style.display == 'none')
+            large_menu.style.display = 'block';
+        else 
+            large_menu.style.display = 'none';
+    }
+
     return (
         <div className='navbar'>
             <div className='name'>
                 <img src={mushroom} alt="mush" />
-                <p>Leo.</p>
+                <p>Gonfia.</p>
             </div>
 
             <div className='dash'>
                 <ul>
-                    <li> <button className='mode'> <img src={moon} alt="mode" /> </button> </li>
-                    <li> <button className='menu'> <img src={menu} alt="dash" /> </button> </li>
+                    <li> <button 
+                            className='mode int-button'
+                        > 
+                            <img src={sun} alt="mode" /> 
+                        </button> 
+                    </li>
+                    
+                    <li> 
+                        <button 
+                            className='menu int-button' 
+                            onClick={openMenu}
+                        > 
+                            <img src={menu} alt="dash" /> 
+                        </button>
+                    </li>
+
+                    <div className='large-menu'>
+                        <li> <a href='/works'> <button> Works </button> </a> </li>
+                        <li> <a href='/posts'> <button> Posts </button> </a> </li>
+                        <li> <a href='/source'> <button> Source </button> </a> </li>
+                    </div>
                 </ul>
             </div>
-
         </div>
     )
 }

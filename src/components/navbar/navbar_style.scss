@@ -49,15 +49,15 @@ $text-color: white;
             list-style: none;
             text-align: center;
             padding: 0 5px 0 0;
-            margin-top: 0.15rem;
+            margin-top: 0.14rem;
 
-            button {
+            .int-button {
                 border: 0;
                 text-align: center;
                 color: white;
                 background-color: transparent;
                 border-radius: 15%;
-                border: 2px solid rgb(56, 56, 56);
+                border: 2px solid rgb(76, 76, 76);
                 width: 3rem;
                 height: 3rem;
 
@@ -66,19 +66,54 @@ $text-color: white;
                     height: 1.5rem;
                     margin: auto;
                 }
+
             }
     
             .mode {
                 background-color: rgb(216, 157, 29);
             }
 
-            .menu {
-                filter: invert(100%);
-            }
-
         }
 
 
+    }
+
+    .large-menu {
+        display: none;
+        width: 10rem;
+        height: fit-content;
+        
+        position: fixed;
+        top: 3.6rem;
+        right: 0.2rem;
+
+        border-radius: 2%;
+
+        
+        
+        background-color: $nav-color; 
+
+        button {
+            position: relative;
+            width: 10rem;
+            height: 2.5rem;
+
+            color: $text-color;
+            background-color: $nav-color;
+
+            border: 0;
+            border-radius: 3%;
+
+            font-size: 16px;
+
+            transition: 300ms;
+            animation: ease-in-out;
+        }
+
+        button:hover {
+            background-color: rgb(56, 56, 56);
+            text-decoration: underline;
+        }
     }
 
 }
