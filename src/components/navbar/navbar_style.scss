@@ -7,15 +7,13 @@ $text-color: white;
 
     background-color: $nav-color;
 
-    font-family: 'Yantramanav', sans-serif;
-
     display:flex;
 
     .name {
         display: flex;
         color: $text-color;
         font-weight: 700;
-        font-size: 1.4em;
+        font-size: 1.6em;
 
         position: relative;
         left: 0;
@@ -89,6 +87,7 @@ $text-color: white;
 
         border-radius: 2%;
 
+        z-index: 2;
         
         
         background-color: $nav-color; 
