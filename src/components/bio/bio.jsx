@@ -15,19 +15,18 @@ const Bio = () => {
             <div className='whoami'>
                 <h2> Whoami: </h2>
                 <hr/>
-                <p> Sono Leonardo, ho 21 anni, studio computer science a Genova, tra tutte le cose che ho studiato
+                <p> Mi chiamo Leonardo, ho 21 anni, studio computer science a Genova, tra tutte le cose che ho studiato
                     mi sono appassionato dello sviluppo di applicazioni web, in particolare di tutto lo sviluppo, dal 
-                    front-end fino al back-end. 
+                    front-end fino al back-end. <br/>
                     Attualmente sto studiando nuove librerie javascript, e portando avanti alcuni progetti, per lo piu
-                    riguardanti il web development.
-                    Durante il mio tempo libero provo a destreggiarmi in qualche challenge di codeforces, porto avanti
-                    i progetti su github.
+                    riguardanti il web development. <br/>
+                    Durante il mio tempo libero provo a completare qualche challenge di codeforces e porto avanti
+                    i miei progetti personali su github.
                 </p>
             </div>
 
 
             <div className='tree-life'>
-
                 <h2> Path: </h2>
                 <hr/>
                 <ul>
@@ -42,7 +41,12 @@ const Bio = () => {
                         </p>
                     </li>
                 </ul>
+            </div>
 
+            <div className='loves'>
+                <h2> I love: </h2>
+                <hr/>
+                <p> Nature, Cooking, Music, Web, Chess, Board games, Magic </p>
             </div>
 
         </div>
