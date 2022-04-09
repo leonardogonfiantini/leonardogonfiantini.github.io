@@ -3,9 +3,6 @@ import "./navbar_style.scss"
 
 import mushroom from "./mushroom.png"
 import menu from "./menu.png"
-import moon from "./moon.png"
-import sun from "./sun.png"
-
 
 const Navbar = () => {
 
@@ -26,13 +23,6 @@ const Navbar = () => {
 
             <div className='dash'>
                 <ul>
-                    <li> <button 
-                            className='mode int-button'
-                        > 
-                            <img src={sun} alt="mode" /> 
-                        </button> 
-                    </li>
-                    
                     <li> 
                         <button 
                             className='menu int-button' 
