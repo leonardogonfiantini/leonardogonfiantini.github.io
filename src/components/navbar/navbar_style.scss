@@ -9,6 +9,7 @@ $text-color: white;
 
     display:flex;
 
+
     .name {
         display: flex;
         color: $text-color;
@@ -50,7 +51,6 @@ $text-color: white;
             margin-top: 0.14rem;
 
             .int-button {
-                border: 0;
                 text-align: center;
                 color: white;
                 background-color: transparent;
@@ -114,5 +114,32 @@ $text-color: white;
             text-decoration: underline;
         }
     }
+    
+    @media screen and (min-width: 800px) {
+        justify-content: center;
 
+        .name{
+            margin-right: 2rem;
+        }
+
+        .dash .int-button {
+            display: none;
+        }
+
+        .dash {
+            position: relative;
+        }
+        .large-menu {
+            display: flex;
+            position: relative;
+            top: 0;
+            margin-left: 2rem;
+
+            button {
+                width: 5rem;
+                height: 3.1rem;
+                font-size: 1.2em;
+            }
+        }
+    }
 }

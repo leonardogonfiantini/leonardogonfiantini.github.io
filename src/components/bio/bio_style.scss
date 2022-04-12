@@ -1,7 +1,7 @@
 .Bio {
 
     hr {
-        width: 90%;
+        width: 15rem;
     }
 
     .profile {
@@ -27,7 +27,7 @@
 
     .whoami {
 
-        top: 4rem;
+        margin-top: 4rem;
         margin-left: 1rem;
         position: relative;
         color: white;
@@ -76,6 +76,31 @@
             font-weight: 600;
             width: 80%;
         }
+    }
+
+    @media screen and (min-width: 700px) {
+
+        .whoami, .tree-life ,.loves {
+            position: relative;
+            width: 40rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 6rem;
+            text-align: center;
+
+            p, ul, li {
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        hr {
+            width: 25rem;
+            margin-left:auto;
+            margin-right: auto;
+        }
+
     }
 
 }
