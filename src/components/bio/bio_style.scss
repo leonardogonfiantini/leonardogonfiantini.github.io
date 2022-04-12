@@ -78,9 +78,9 @@
         }
     }
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 620px) {
 
-        .whoami, .tree-life ,.loves {
+        .whoami, .tree-life , .loves {
             position: relative;
             width: 40rem;
             margin-left: auto;
@@ -97,6 +97,33 @@
 
         hr {
             width: 25rem;
+            margin-left:auto;
+            margin-right: auto;
+        }
+
+    }
+
+
+    @media screen and (min-width: 900px) {
+
+        .whoami, .tree-life , .loves {
+            position: relative;
+            width: 60rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 6rem;
+            text-align: center;
+            
+            
+            p, ul, li {
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        hr {
+            width: 40rem;
             margin-left:auto;
             margin-right: auto;
         }

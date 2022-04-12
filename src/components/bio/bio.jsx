@@ -18,8 +18,7 @@ const Bio = () => {
                 <p> Mi chiamo Leonardo, ho 21 anni, studio computer science a Genova, tra tutte le cose che ho studiato
                     mi sono appassionato dello sviluppo di applicazioni web, in particolare di tutto lo sviluppo, dal 
                     front-end fino al back-end. <br/>
-                    Attualmente sto studiando nuove librerie javascript, e portando avanti alcuni progetti, per lo piu
-                    riguardanti il web development. <br/>
+                    Attualmente sto studiando nuove librerie js, e portando avanti alcuni progetti. <br/>
                     Durante il mio tempo libero provo a completare qualche challenge di codeforces e porto avanti
                     i miei progetti personali su github.
                 </p>
