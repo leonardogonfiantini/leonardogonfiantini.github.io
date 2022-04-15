@@ -16,10 +16,10 @@ const Navbar = () => {
 
     return (
         <div className='navbar'>
-            <div className='name'>
+            <a href="/"><div className='name'>
                 <img src={mushroom} alt="mush" />
                 <p>Gonfia.</p>
-            </div>
+            </div></a>
 
             <div className='dash'>
                 <ul>
@@ -35,7 +35,7 @@ const Navbar = () => {
                     <div className='large-menu'>
                         <li> <a href='/works'> <button> Works </button> </a> </li>
                         <li> <a href='/posts'> <button> Posts </button> </a> </li>
-                        <li> <a href='/source'> <button> Source </button> </a> </li>
+                        <li> <a href='https://github.com/leonardogonfiantini'> <button> Source </button> </a> </li>
                     </div>
                 </ul>
             </div>

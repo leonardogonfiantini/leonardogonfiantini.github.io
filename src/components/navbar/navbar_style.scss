@@ -9,6 +9,9 @@ $text-color: white;
 
     display:flex;
 
+    a {
+        text-decoration: none;
+    }
 
     .name {
         display: flex;

@@ -14,8 +14,6 @@ const Works = () => {
 
                 <Work title="Ankuoo web app" img={Ankuoo} description="Ho ricreato l'app di ankuoo, per i dispositivi iot, si possono inserire timer, time schedule con orari e giorni ma anche accendere direttamente il dispositivo, l'applicazione utilizza mongodb atlas per tenere traccia delle operazioni"/>
 
-                <Work title="Ankuoo web app" img={Ankuoo} description="Ho ricreato l'app di ankuoo, per i dispositivi iot, si possono inserire timer, time schedule con orari e giorni ma anche accendere direttamente il dispositivo, l'applicazione utilizza mongodb atlas per tenere traccia delle operazioni"/>
-
             <Footer />
         </div>
     )
