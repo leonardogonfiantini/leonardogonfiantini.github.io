@@ -1,0 +1,56 @@
+.footer {
+    position: relative;
+    bottom: 0%;
+
+    width: 100%;
+    height: max-content;
+
+    margin-inline: auto;
+    background-color: $hf-background-color;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 0;
+        color: $hf-title-color; 
+    }
+
+    img {
+        margin-top:1rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+.footer-map-site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 0;
+        color: $hf-title-color;
+    }
+    
+    .footer-nav-item {
+        text-decoration: none;
+        color: $hf-text-color;
+        font-size: 1.5em;
+    }
+}
+
+.footer-hugo {
+    color: $hf-title-color;
+    text-align: center;
+
+    font-size: 1.5em;
+    letter-spacing: 0.3em;
+}

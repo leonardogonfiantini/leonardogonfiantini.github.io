@@ -1,0 +1,61 @@
+.header {
+    position: relative;
+    display: flex;
+
+    gap: 9rem;
+    top: 0%;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 5rem;
+    width: 100%;
+
+
+    background-color: $hf-background-color;
+}
+
+.header-logo {
+    position: relative;
+    color: $hf-text-color;
+
+    margin-left: 1rem;
+
+    text-decoration: none;
+}
+
+.header-nav {
+    position: relative;
+
+    .header-nav-item {
+        text-decoration: none;
+        color: $hf-text-color;
+        margin-left: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 1001px) {
+    .header-logo, .header-nav {
+        font-size: 2em;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .header-logo, .header-nav {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .header-logo, .header-nav {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .header-logo, .header-nav {
+        font-size: 1.1em;
+    }
+}

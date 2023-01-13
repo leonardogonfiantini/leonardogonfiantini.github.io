@@ -1,0 +1,97 @@
+.home {
+    overflow: hidden;
+    background-color: $home-background-color;
+}
+
+.home-profile-picture {
+    height: max-content;
+    width: 100%;
+
+    text-align: center;
+    
+    img {
+        width: 18rem;
+        height: 18rem;
+
+        object-fit: cover;
+
+        border-radius: 50%;
+        border: 2px solid white;
+
+        margin-block: 5rem;
+    }
+
+}
+
+.home-description {
+    position: relative;
+    margin-inline: auto;
+
+    p {
+        margin-top:4rem;
+        text-align: left;
+        margin-inline: auto;
+        width: 70%;
+            
+        font-size: 1.2em;
+        color: $home-text-color;
+    }
+}
+
+.home-description-item {
+    position: relative;
+    text-align: center;
+        
+    font-size: 1.5em;
+    color: $home-text-color;
+}
+
+.home-description-item::before, 
+.home-description-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.home-description-item::before {
+    background: $home-background-color;
+    animation: typewriter 5s steps(57) forwards;
+}
+
+.home-description-item::after {
+    width: .1em;
+    background: $home-text-color;
+    animation: 
+            typewriter 5s steps(57) forwards,
+            blink 5s steps(57) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%; 
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 4s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.home-space {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+}
