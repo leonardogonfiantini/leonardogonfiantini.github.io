@@ -1,0 +1,7 @@
+{{ define "main" }}
+    
+    {{ range (readDir "content/blog/") }}
+        <p>{{ .Name | title }}</p>
+    {{ end }}
+
+{{ end }}
