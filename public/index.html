@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta name="generator" content="Hugo 0.109.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <title> Leonardo Gonfiantini </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/bundle.min.e38349c64ef66eefca6e9251db425d24d4be50cf0e165d97d7ea841086120da6.css" integrity="sha256-44NJxk72bu/KbpJR20JdJNS&#43;UM8OFl2X1&#43;qEEIYSDaY=" />
+</head>
+
+    <body>
+        <header class="header">
+
+        <a href="/" class="header-logo">
+            Leonardo Gonfiantini
+        </a>
+
+        <nav class="header-nav">
+            <a href="/blog" class="header-nav-item"> Blog </a>
+            <a href="/contact" class="header-nav-item"> Contact </a>
+        </nav>
+
+
+</header>
+
+        
+    <div class="home">
+    <section class="home-whoami">
+
+        <div class="home-profile-picture">
+            <img src="/Profile.jpeg" alt="Profile picture">
+        </div>
+
+        <div class="home-description">
+            <h1 class="home-description-item hidden"> Hi there, Im Leonardo student of computer science @ UniGe </h1>
+            <p class="hidden"> Since i was a child and nowadays, one of my biggest passion is related to all the computer stuff: programming, hardware, software, tools, videogames. </p>
+            <p class="hidden"> I started programming seriously when i enrolled to the university and in 2022 i get my bachelor degree in computer science. </p>
+            <p class="hidden"> Now i'm attending a master degree in data-centric computing, because i love manage big quantity of data and make them easy to  use, but i also do web development related stuff. </p>
+            <p class="hidden"> As i usually say: "Everything you need to know is on my GitHub" </p>
+        </div>
+
+    </section>
+
+
+    <div class="home-space"></div>
+
+</div>
+
+<script>
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show")
+            }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll(".hidden")
+    console.log(hiddenElements)
+    hiddenElements.forEach((el) => observer.observe(el))
+
+</script>
+
+
+        <footer class="footer">
+
+    <div class="footer-social">
+        <h1> Social: </h1>
+
+        <a href="https://github.com/leonardogonfiantini"> <img src="/github.png" alt="Github image"> </a>
+        <a href="https://www.instagram.com/leonardo_gonfiantini/"> <img src="/instagram.png" alt="Instagram image"> </a>
+        <a href="https://it.linkedin.com/in/leonardo-gonfiantini-b12871235?trk=people-guest_people_search-card"> <img src="/linkedin.png" alt="Linkedin image"> </a>
+    </div>
+
+    <nav class="footer-map-site">
+        <h1> Map site: </h1>
+
+        <a href="" class="footer-nav-item"> Home </a>
+        <a href="" class="footer-nav-item"> Blog </a>
+        <a href="" class="footer-nav-item"> Contact </a>
+    </nav>
+
+
+    <h1 class="footer-hugo"> This site is maded with Hugo </h1>
+
+</footer>
+
+        
+
+        
+
+    </body>
+
+</html>
