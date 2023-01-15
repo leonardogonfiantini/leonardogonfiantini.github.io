@@ -126,56 +126,26 @@
   position: relative;
   margin-inline: auto;
 }
+.home-description h1 {
+  text-align: center;
+  height: 8rem;
+  margin-inline: 1rem;
+  margin-bottom: 4rem;
+  font-size: 1.6em;
+  color: rgb(16, 185, 67);
+}
 .home-description p {
-  margin-top: 4rem;
+  margin-bottom: 8rem;
   text-align: left;
   margin-inline: auto;
   width: 70%;
-  font-size: 1.2em;
-  color: rgb(16, 185, 67);
-}
-
-.home-description-item {
-  position: relative;
-  text-align: center;
   font-size: 1.5em;
   color: rgb(16, 185, 67);
 }
 
-.home-description-item::before,
-.home-description-item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.home-description-item::before {
-  background: rgb(15, 15, 15);
-  animation: typewriter 5s steps(57) forwards;
-}
-
-.home-description-item::after {
-  width: 0.1em;
-  background: rgb(16, 185, 67);
-  animation: typewriter 5s steps(57) forwards, blink 5s steps(57) forwards;
-}
-
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
-@keyframes blink {
-  to {
-    background: transparent;
-  }
-}
 .hidden {
   opacity: 0;
-  transition: all 4s;
+  transition: all 3s;
 }
 
 .show {

@@ -6,10 +6,10 @@
         </div>
 
         <div class="home-description">
-            <h1 class="home-description-item hidden"> Hi there, Im Leonardo student of computer science @ UniGe </h1>
+            <h1 id="whoami" class="hidden"> </h1>
             <p class="hidden"> Since i was a child and nowadays, one of my biggest passion is related to all the computer stuff: programming, hardware, software, tools, videogames. </p>
             <p class="hidden"> I started programming seriously when i enrolled to the university and in 2022 i get my bachelor degree in computer science. </p>
-            <p class="hidden"> Now i'm attending a master degree in data-centric computing, because i love manage big quantity of data and make them easy to  use, but i also do web development related stuff. </p>
+            <p class="hidden"> Now i'm attending a master degree in data-centric computing, because i like manage big quantity of data and make them easy to  use, but i also do web development related stuff. </p>
             <p class="hidden"> As i usually say: "Everything you need to know is on my GitHub" </p>
         </div>
 
@@ -22,10 +22,24 @@
 
 <script>
 
+    const whoami = document.getElementById("whoami");
+    const txt = " Hi there, I'm Leonardo student of computer science @ UniGe";
+
+    let i = 0;
+    const intervalId = setInterval(function() {
+        whoami.innerHTML += txt[i];
+        i++;
+
+        if (i === txt.length) {
+            console.log(i)
+            clearInterval(intervalId);
+        }
+    }, 75);
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add("show")
+                entry.target.classList.add("show");
             }
         });
     });
