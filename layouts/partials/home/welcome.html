@@ -23,15 +23,25 @@
 <script>
 
     const whoami = document.getElementById("whoami");
-    const txt = " Hi there, I'm Leonardo student of computer science @ UniGe";
+    const txt = "Hi there, I'm Leonardo student of computer science @ UniGe";
+
+    const bar = "❚"
 
     let i = 0;
     const intervalId = setInterval(function() {
+        if (i != 0) {
+            whoami.innerHTML = whoami.innerHTML.replace(bar,"")
+        }
+
         whoami.innerHTML += txt[i];
+
+        if ( i % 3 == 0) {
+            whoami.innerHTML += bar
+        }
         i++;
 
         if (i === txt.length) {
-            console.log(i)
+            whoami.innerHTML = whoami.innerHTML.replace(bar,"")
             clearInterval(intervalId);
         }
     }, 75);
