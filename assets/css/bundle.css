@@ -176,12 +176,15 @@
 .blog-post p {
   position: relative;
   margin-inline: 1rem;
+  font-size: 1.2rem;
   color: rgb(16, 185, 67);
 }
 .blog-post h1 {
   position: relative;
   margin-left: 1rem;
   margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 2rem;
   color: rgb(44, 13, 221);
 }
 .blog-post h3 {
@@ -201,6 +204,16 @@
     font-size: 1rem;
   }
 }
+.post {
+  width: 80%;
+  color: rgb(16, 185, 67);
+  text-align: left;
+  margin-inline: auto;
+}
+.post h1 {
+  color: rgb(44, 13, 221);
+}
+
 /* End Blog */
 html, body {
   margin: 0;
