@@ -1,0 +1,50 @@
+.blog-post {
+
+    position: relative;
+    width: 40rem;
+    height: max-content;
+
+    background-color: $blog-post-background-color;
+    border-radius: 1rem;
+    
+    margin-inline: auto;
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        position: relative;
+        margin-inline: 1rem;
+
+        color: $blog-post-summary-color;
+    }
+
+    h1 {
+        position: relative;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        color: $blog-post-title-color;
+    }
+
+    h3 {
+        position: relative;
+        text-align: right;
+        margin-right: 1rem;
+    }
+
+}
+
+@media  screen and (max-width: 800px) {
+    .blog-post {
+        width: 80%;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}

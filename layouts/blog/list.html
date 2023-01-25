@@ -1,7 +1,25 @@
 {{ define "main" }}
+
+    {{ partial "blog/blog.html"}}
     
-    {{ range (readDir "content/blog/") }}
-        <p>{{ .Name | title }}</p>
+    {{ range .Pages }}
+
+    <article>
+
+        <div class="blog-post">
+            <h1> <a href="{{ .RelPermalink }}"> {{ .Title }} </h1> </a>
+            <p> {{ .Summary }} </p>
+
+            {{ if .Truncated }}
+                
+                <h3> <a href="{{ .RelPermalink }}"> Read more... </a> </h3>        
+            
+            {{ end }}
+        </div>
+
+
+    </article>
+
     {{ end }}
 
 {{ end }}

@@ -2,6 +2,8 @@
 /* End Header */
 /* Home */
 /* End Home */
+/* Blog */
+/* End Blog */
 /* Common */
 .header {
   position: relative;
@@ -159,6 +161,47 @@
 }
 
 /* End Home*/
+/* Blog */
+.blog-post {
+  position: relative;
+  width: 40rem;
+  height: max-content;
+  background-color: rgb(32, 32, 32);
+  border-radius: 1rem;
+  margin-inline: auto;
+}
+.blog-post a {
+  text-decoration: none;
+}
+.blog-post p {
+  position: relative;
+  margin-inline: 1rem;
+  color: rgb(16, 185, 67);
+}
+.blog-post h1 {
+  position: relative;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  color: rgb(44, 13, 221);
+}
+.blog-post h3 {
+  position: relative;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .blog-post {
+    width: 80%;
+  }
+  .blog-post h1 {
+    font-size: 1.5rem;
+  }
+  .blog-post p {
+    font-size: 1rem;
+  }
+}
+/* End Blog */
 html, body {
   margin: 0;
   font-family: "Space Mono", monospace;
