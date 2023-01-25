@@ -1,0 +1,57 @@
+.contact {
+    
+    background-color: $contact-background-color;
+
+    height: 35rem;
+
+
+    form {
+        position: relative;
+        top: 3rem;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 30rem;
+        margin-inline: auto;
+
+        input, textarea, button {
+            margin-top: 1rem;
+            height: 2rem;
+        }
+
+        input, textarea {
+            color: $contact-text-color;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px solid $contact-line-color;
+        }
+
+        textarea {
+            height: 15rem;
+        }
+
+        button {
+            position: relative;
+            width: 5rem;
+            
+            border: 0;
+            color: $contact-text-color;
+            background-color: $contact-button-color;
+        }
+
+        input:focus, textarea:focus{
+            outline: 3px solid $contact-line-color;
+        }
+        
+
+    }
+
+    @media screen and (max-width: 600px) {
+        form {
+            width: 80%;
+        }
+    }
+
+
+}

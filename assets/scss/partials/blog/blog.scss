@@ -1,3 +1,8 @@
+.blog {
+    background-color: $blog-background-color;
+    height: max-content;
+}
+
 .blog-post {
 
     position: relative;
@@ -8,6 +13,9 @@
     border-radius: 1rem;
     
     margin-inline: auto;
+
+    top:2rem;
+    
 
     a {
         text-decoration: none;

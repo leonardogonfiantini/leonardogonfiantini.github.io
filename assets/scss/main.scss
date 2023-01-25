@@ -14,8 +14,12 @@
 @import "partials/blog/blog.scss";
 /* End Blog */
 
+/* Contact */
+@import "partials/contact/contact.scss";
+/* End Contact */
+
 html, body {
     margin: 0;
     font-family: 'Space Mono', monospace;
-    background-color: $hf-background-color;
+    background-color: $home-background-color;
 }
