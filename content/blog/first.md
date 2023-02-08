@@ -3,9 +3,18 @@ title: "My First Post"
 date: 2023-01-13T16:41:59+01:00
 ---
 
-My first post on my personal blog, i'm really enthustiast of what i have done with Hugo!.
+Hugo is amazing!
 
 <!--more-->
 
-Hugo is one of the best framework for static web in the worls i think, let you to create amazing things!.
-You can see how i made this site by looking at my personal repo in GitHub.
+This is my first post on my personal blog and I am incredibly excited about what I have accomplished using Hugo. 
+
+Hugo is a fantastic framework for building static websites, as you can see from my site which was created using the framework. 
+One area where Hugo could potentially improve is its documentation, specifically with regards to providing an easier tutorial for beginners in my opinion.
+Aside from that, Hugo is pretty awesome and incredibly fast!
+
+If you're curious, you can check out the code on my [GitHub repository](https://github.com/leonardogonfiantini/leonardogonfiantini.github.io).
+
+
+
+For any suggestions or improvements, please feel free to reach out to me via the contact page found in the navigation bar.
