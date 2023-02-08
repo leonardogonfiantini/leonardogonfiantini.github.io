@@ -194,7 +194,7 @@
   margin-top: 0.5rem;
   margin-bottom: 0;
   font-size: 2rem;
-  color: rgb(44, 13, 221);
+  color: rgb(223, 52, 22);
 }
 .blog-post h3 {
   position: relative;
@@ -220,7 +220,12 @@
   margin-inline: auto;
 }
 .post h1 {
-  color: rgb(44, 13, 221);
+  color: rgb(223, 52, 22);
+}
+@media screen and (max-width: 800px) {
+  .post img {
+    width: 90%;
+  }
 }
 
 /* End Blog */
