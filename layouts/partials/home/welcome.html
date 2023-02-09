@@ -7,10 +7,38 @@
 
         <div class="home-description">
             <h1 id="whoami"> </h1>
-            <p class="hidden"> Since i was a child and nowadays, one of my biggest passion is related to all the computer stuff: programming, hardware, software, tools, videogames. </p>
-            <p class="hidden"> I started programming seriously when i enrolled to the university and in 2022 i get my bachelor degree in computer science. </p>
-            <p class="hidden"> Now i'm attending a master degree in data-centric computing, because i like to manage big quantity of data and make them easy to  use, but i also do web development related stuff. </p>
-            <p class="hidden"> As i usually say: "Everything you need to know is on my GitHub" </p>
+
+            <p class="hidden" style="height: 10rem"> 
+                Ever since I was young, I have been fascinated by the world of computers. 
+                From programming and hardware, to software and tools, and even video games, 
+                I have always been drawn to the exciting possibilities offered by technology. 
+            </p>
+
+            <p class="hidden" style="height: 15rem"> 
+                I decided to turn my passion into a career when I enrolled in university, 
+                where I studied computer science and received my bachelor's degree in 2022. 
+                This solid foundation in computer science has allowed me to delve deeper 
+                into the field of data-centric computing, and I am currently pursuing 
+                a master's degree in this area. 
+            </p>
+
+            <p class="hidden" style="height: 25rem"> 
+                My studies have equipped me with the skills and knowledge to effectively manage large amounts of data, 
+                making it accessible and user-friendly. I find great satisfaction in finding ways to turn complex 
+                data into meaningful insights that can be used to solve real-world problems. 
+                In addition to my studies, I also engage in web development projects, where I put my skills and creativity 
+                to the test by building dynamic and user-friendly websites. Whether I am working on a school project or a 
+                personal project, I am always eager to explore new technologies and push the boundaries of what is possible 
+                with code.
+            </p>
+
+            <p class="hidden" style="height: 10rem">
+                Overall, my passion for technology and my dedication to my studies and projects have allowed 
+                me to grow and develop as a computer science professional, and I am excited to see where this 
+                journey will take me next.
+            </p>
+
+            <p class="hidden" style="height: 10rem"> As I like to say, "everything you need to know can be found on my GitHub" </p>
         </div>
 
     </section>
@@ -22,33 +50,44 @@
 
 <script>
 
+    async function typewriter(object, text, time) {
+        const bar = "❚"
+        let i = 0;
+        const intervalId = setInterval(function() {
+            if (i != 0) {
+                object.innerHTML = object.innerHTML.replace(bar,"")
+            }
+
+            object.innerHTML += text[i];
+
+            if ( i % 3 == 0) {
+                object.innerHTML += bar
+            }
+            i++;
+
+            if (i === text.length) {
+                object.innerHTML = object.innerHTML.replace(bar,"")
+                clearInterval(intervalId);
+            }
+        }, time);
+    }
+
+
     const whoami = document.getElementById("whoami");
     const txt = "Hi there, I'm Leonardo student of computer science @ UniGe";
-    const bar = "❚"
 
-    let i = 0;
-    const intervalId = setInterval(function() {
-        if (i != 0) {
-            whoami.innerHTML = whoami.innerHTML.replace(bar,"")
-        }
+    typewriter(whoami, txt, 50);
 
-        whoami.innerHTML += txt[i];
-
-        if ( i % 3 == 0) {
-            whoami.innerHTML += bar
-        }
-        i++;
-
-        if (i === txt.length) {
-            whoami.innerHTML = whoami.innerHTML.replace(bar,"")
-            clearInterval(intervalId);
-        }
-    }, 50);
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add("show");
+                if (!entry.target.classList.contains("show")) {
+                    entry.target.classList.add("show");
+                    text = entry.target.innerHTML;
+                    entry.target.innerHTML = "";
+                    typewriter(entry.target, text, 15);
+                }
             }
         });
     });

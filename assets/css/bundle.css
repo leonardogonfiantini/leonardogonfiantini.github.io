@@ -140,17 +140,17 @@
   color: rgb(16, 185, 67);
 }
 .home-description p {
-  margin-bottom: 8rem;
   text-align: left;
   margin-inline: auto;
   width: 70%;
+  margin-top: 5rem;
   font-size: 1.5em;
   color: rgb(16, 185, 67);
 }
 
 .hidden {
   opacity: 0;
-  transition: all 3s ease-in;
+  transition: all 0s ease-in;
 }
 
 .show {
