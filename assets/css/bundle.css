@@ -137,7 +137,6 @@
   text-align: center;
   height: 8rem;
   margin-inline: 1rem;
-  margin-bottom: 4rem;
   font-size: 1.6em;
   color: rgb(16, 185, 67);
 }
@@ -146,7 +145,7 @@
   text-align: left;
   margin-inline: auto;
   width: 70%;
-  margin-bottom: 10rem;
+  margin-top: 10rem;
   font-size: 1.5em;
   color: rgb(16, 185, 67);
 }
