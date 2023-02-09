@@ -130,6 +130,8 @@
 .home-description {
   position: relative;
   margin-inline: auto;
+  display: flex;
+  flex-direction: column;
 }
 .home-description h1 {
   text-align: center;
@@ -140,10 +142,11 @@
   color: rgb(16, 185, 67);
 }
 .home-description p {
+  position: relative;
   text-align: left;
   margin-inline: auto;
   width: 70%;
-  margin-top: 5rem;
+  margin-bottom: 10rem;
   font-size: 1.5em;
   color: rgb(16, 185, 67);
 }
