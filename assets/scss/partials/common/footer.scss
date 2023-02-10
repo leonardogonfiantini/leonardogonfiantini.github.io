@@ -16,11 +16,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    color: $hf-title-color; 
+ 
+    a {
+        text-decoration: none;
+    }
     
     h1 {
         font-size: 1.8em;
         margin-bottom: 0;
-        color: $hf-title-color; 
     }
 
     img {

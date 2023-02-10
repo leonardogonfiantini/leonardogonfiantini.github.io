@@ -70,11 +70,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: rgb(23, 92, 219);
+}
+.footer-social a {
+  text-decoration: none;
 }
 .footer-social h1 {
   font-size: 1.8em;
   margin-bottom: 0;
-  color: rgb(23, 92, 219);
 }
 .footer-social img {
   margin-top: 1rem;
